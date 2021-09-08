@@ -1,0 +1,395 @@
+body {
+    font-family: 'Times New Roman';
+    color: black;
+    background-color: whitesmoke;
+    margin: 1px;
+    font-size: 35px;
+}
+
+.parent {
+    /* grid parent for all the html pages */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 5% 30% 1fr 25% 21%;
+    gap: 9px;
+    position: static;
+}
+
+.dark-mode {
+    background-color: darkgray;
+    color: white;
+}
+
+header, footer {
+    background-color: lightblue;
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+
+header {
+    display: flex;
+    font-family: "Sofia", sans-serif;
+    border-bottom: darkblue 4px solid;
+    height: 100%;
+    position: static;
+}
+
+footer {
+    border-top: darkblue 4px solid;
+    grid-row: 7/8;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(5, 15%) 25%;
+    grid-template-rows: 2fr 2fr;
+    gap: 0%;
+}
+
+header>img {
+    height: 45%;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 2/6;
+    display: flex;
+    flex-direction: column;
+    font-size: 38px;
+    padding: 10px;
+}
+
+nav>ul>li:hover {
+    background-color: darkblue;
+    border-right: darkgray 2em solid;
+}
+
+.button {
+    width: 40%;
+    height: 40%;
+    color: black;
+    background: lightblue;
+    font-size: 22px;
+    font-family: serif;
+    font-weight: bold;
+    border: black solid 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-block-start: 0%;
+}
+
+li {
+    background-color: gray;
+    margin: 2.5em 0;
+    padding: 0.2em;
+    border-right: darkblue 1em solid;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgba(210, 235, 255, 0.726);
+}
+
+input[type=text], input[type=number] {
+    float: right;
+    padding: 6px;
+    font-size: 35px;
+    height: 30px;
+}
+
+.search {
+    display: inline-flex;
+    margin-left: auto;
+    align-self: center;
+    align-items: center;
+}
+
+em {
+    font-style: normal;
+}
+
+.mySlides {
+    display: none;
+}
+
+.wagen {
+    height: 95px;
+}
+
+/*************************************************************BIKE PAGE***********************************************************************/
+
+.header {
+    font-family: "Sofia", sans-serif;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#article {
+    grid-row: 3/7;
+    grid-column: 2/5;
+    grid-template-columns: 50% 35% 12%;
+    grid-template-rows: 22% 22% 22% 22% 22%;
+    grid-gap: 10px;
+    display: grid;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cart ion-icon {
+    vertical-align: middle;
+    font-size: 53px;
+    padding-right: 1px;
+}
+
+.bikes {
+    height: 75%;
+}
+
+.itemA {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.info1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+.cart1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    color: black;
+    margin: auto;
+}
+
+.add {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.idk2 {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.itemB {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.info2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+}
+
+.cart2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: black;
+    margin: auto;
+}
+
+.itemC {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.info3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+.cart3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: black;
+    margin: auto;
+}
+
+.itemD {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.info4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: center;
+}
+
+.cart4 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    color: black;
+    margin: auto;
+}
+
+.itemE {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.info5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    align-self: center;
+}
+
+.cart5 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    color: black;
+    margin: auto;
+}
+
+.idk {
+    color: black;
+}
+
+.idk:hover {
+    color: black;
+}
+
+/********************************************RANDOM IMPRTANT THINGS*************************************************************/
+
+header>h1 {
+    /*  home*/
+    font-size: 3.0em;
+    align-self: center;
+    margin-left: 2%;
+    font-family: sofia;
+    font-weight: 900;
+    margin-top: auto;
+}
+
+#imgB {
+    /* home page gif */
+    grid-row: 3/7;
+    height: 100%;
+    width: 100%;
+    grid-column: 2/4;
+    align-self: center;
+}
+
+.A {
+    /* home page open/close sign */
+    grid-row: 2/3;
+    grid-column: 2/4;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 33px;
+}
+
+.mySlides {
+    /* images on home page. so that all of them show at the exact time  */
+    display: none;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.fa {
+    /* facebook logo */
+    padding: 30px;
+    font-size: 33px;
+    display: flex;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.foot {
+    justify-self: flex-start;
+}
+
+.fa-facebook {
+    background: darkblue;
+    color: white;
+    justify-self: center;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.footP {
+    font-size: 22px;
+    grid-column: 4/7;
+    justify-self: center;
+    grid-row: 2/3;
+}
+
+.footp {
+    font-size: 25px;
+    grid-row: 2/3;
+    grid-column: 2/6;
+    justify-self: center;
+}
+
+.footerEmail {
+    grid-row: 2/3;
+    align-self: center;
+    grid-column: 2/3;
+}
+
+/*****************************************************************RENT PAGE************************************************************************/
+
+table {
+    border: black solid 1px;
+    grid-row: 2/7;
+    grid-column: 2/4;
+    text-align: left;
+    height: 100%;
+    padding: 10px;
+}
+
+th, td {
+    border: dotted darkgray 1px;
+}
+
+.verhuur1 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    height: 100%;
+    width: 100%;
+}
+
+.verhuur {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    height: 100%;
+    width: 100%;
+}

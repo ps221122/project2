@@ -1,0 +1,501 @@
+/**********************************************************************@MEDIA******************************************************/
+
+@media only screen and (max-width: 1024px) and (orientation:landscape) {
+    header, footer {
+        width: 100%;
+        font-size: 25px;
+        grid-column: 1/5;
+    }
+    nav {
+        font-size: medium;
+        grid-row: 2/4;
+    }
+    .A {
+        font-size: 25px;
+    }
+    .voorwaarden {
+        grid-column: 4/6;
+        display: flex;
+        grid-row: 1/2;
+    }
+    .footP {
+        grid-row: 1/2;
+        display: flex;
+        align-self: flex-end;
+    }
+    .names {
+        grid-column: 4/6;
+    }
+    .info1 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart1 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .itemB {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .info2 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart2 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .itemC {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .info3 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart3 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .itemD {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .info4 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart4 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .bikes {
+        height: 80%;
+    }
+    #article {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 10% 10% 10%;
+        grid-gap: 33px;
+    }
+    .wagen {
+        height: 65px;
+    }
+    .header {
+        grid-column: 2/5;
+        display: flex;
+        justify-content: center;
+    }
+    .contact {
+        display: none;
+    }
+    .form {
+        margin: 15%;
+        width: 98%;
+        margin-left: 10px;
+        border-radius: 24%;
+    }
+    #send {
+        width: 77%;
+    }
+    .open {
+        grid-row: 3/5;
+        grid-column: 2/5;
+    }
+    .gegevens {
+        grid-row: 5/7;
+        grid-column: 2/5;
+    }
+    .photo-historie {
+        grid-row: 6/7;
+        grid-column: 4/5;
+    }
+    .verhuur1 {
+        display: none;
+    }
+    table {
+        grid-column: 2/5;
+    }
+    .button {
+        width: 70%;
+        height: 50%;
+    }
+    .formulier {
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+    }
+    #postcode {
+        grid-row: 5/6;
+    }
+    #date {
+        grid-row: 9/10;
+    }
+    .container-Products ion-icon {
+        display: none;
+    }
+    .cart-items {
+        width: 125px;
+    }
+    .prijs, .total {
+        font-size: 27px;
+    }
+    .aantal {
+        justify-content: center;
+    }
+    .basketTotalContainer {
+        justify-content: space-around;
+    }
+    .buyBtn {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation:portrait) {
+    header {
+        font-size: small;
+    }
+    .parent {
+        grid-template-rows: 10% 10% 6% 1fr 1fr 2fr;
+    }
+    nav {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        font-size: 28px;
+        align-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav li {
+        display: inline;
+    }
+    #imgB {
+        display: none;
+    }
+    .sign {
+        font-size: 32px;
+        grid-row: 3/4;
+        grid-column: 1/5;
+    }
+    .photo-section {
+        grid-column: 1/5;
+        grid-row: 4/7;
+    }
+    .Fcontact {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        grid-template-rows: 1fr 1fr 1fr;
+        font-size: 27px;
+    }
+    .over {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .voorwaarden {
+        grid-column: 4/7;
+    }
+    .names {
+        grid-column: 4/7;
+        display: flex;
+        align-items: flex-end;
+    }
+    .footerEmail {
+        grid-row: 3/4;
+        align-self: center;
+        grid-column: 2/3;
+    }
+    .fa-twitter {
+        grid-row: 3/4;
+    }
+    .header {
+        grid-row: 3/4;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: center;
+    }
+    .background {
+        grid-column: 1/5;
+    }
+    .image-contact {
+        width: 100%;
+    }
+    .form {
+        grid-row: 4/7;
+        grid-column: 1/5;
+        border-radius: 1%;
+        grid-gap: 27px;
+        width: 90%;
+        height: 95%;
+    }
+    #send {
+        width: 90%;
+    }
+    .info1 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart1 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .itemB {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .info2 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart2 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .itemC {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .info3 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart3 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .itemD {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .info4 {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+    .cart4 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+    }
+    .bikes {
+        height: 250px;
+    }
+    table {
+        grid-row: 4/7;
+        grid-column: 1/5;
+    }
+    .verhuur {
+        display: none;
+    }
+    .verhuur1 {
+        display: none;
+    }
+    .button {
+        width: 65%;
+        height: 74%;
+    }
+    .information-section {
+        grid-column: 1/5;
+        grid-row: 4/7;
+    }
+    .photo-historie {
+        grid-column: 3/5;
+        grid-row: 5/7;
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+    }
+    .container-Products {
+        grid-column: 1/5;
+        width: 100%;
+    }
+    .cart-items {
+        width: 35%;
+        margin-left: 5px;
+    }
+    .items {
+        width: 42%;
+        justify-content: flex-start;
+    }
+    .span {
+        font-size: 24px;
+    }
+    .container-Products ion-icon {
+        display: none;
+    }
+    .prijs {
+        font-size: 29px;
+    }
+    .aantal {
+        justify-content: center;
+    }
+    .basketTotalContainer {
+        justify-content: space-between;
+    }
+    .buyBtn {
+        width: 25%;
+    }
+    .formulier {
+        grid-column: 1/5;
+        grid-row: 4/7;
+        grid-template-columns: 35% 63%;
+        grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation:landscape) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 13% 10% auto auto auto 1fr;
+        gap: 0;
+    }
+    .logo {
+        height: 30%;
+    }
+    .cart ion-icon {
+        font-size: 42px;
+    }
+    .search {
+        align-self: normal;
+    }
+    nav {
+        grid-row: 2/3;
+        padding: 0;
+        grid-column: 1/2;
+        font-size: 21px;
+    }
+    nav li {
+        text-align: center;
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: black 1px solid;
+    }
+    .sign {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    header {
+        font-size: 15px;
+        display: flex;
+        grid-column: 1/2;
+    }
+    footer {
+        grid-template-rows: auto auto auto;
+        grid-column: 1/2;
+    }
+    .over {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .voorwaarden {
+        grid-column: 5/7;
+    }
+    .footP {
+        grid-column: 3/7;
+    }
+    .names {
+        align-self: flex-end;
+        grid-column: 3/7;
+    }
+    .footerEmail {
+        align-self: flex-start;
+    }
+    .photo-section {
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    #imgB, .search-logo {
+        display: none;
+    }
+    .info1 {
+        font-size: 24px;
+        align-self: flex-start;
+        display: none;
+    }
+    .cart1 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+        display: none;
+    }
+    .itemB {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: none;
+    }
+    .info2 {
+        font-size: 24px;
+        align-self: flex-start;
+        display: none;
+    }
+    .cart2 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+        display: none;
+    }
+    .itemC {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: none;
+    }
+    .info3 {
+        font-size: 24px;
+        align-self: flex-start;
+        display: none;
+    }
+    .cart3 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+        display: none;
+    }
+    .itemD {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: none;
+    }
+    .info4 {
+        font-size: 24px;
+        align-self: flex-start;
+        display: none;
+    }
+    .cart4 {
+        margin-left: 250px;
+        margin-top: 121px;
+        grid-column: 2/3;
+        display: none;
+    }
+    .bikes {
+        height: 250px;
+        display: none;
+    }
+    .header {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+}
+
+@media only screen and (max-width: 500px) and (orientation:portrait) {
+    .parent {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) and (orientation:landscape) {
+    .parent {
+        display: none;
+    }
+}

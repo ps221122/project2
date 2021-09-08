@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logo20x20.png" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/2nd.css" rel="stylesheet">
+    <link href="css/3rd.css" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 790px) and (orientation:portrait) {
+
+            header,
+            footer,
+            nav,
+            section,
+            .gegevens {
+                grid-column: 1/7;
+            }
+
+            .open {
+                grid-row: 4/6;
+            }
+
+            .gegevens {
+                grid-row: 6/7;
+            }
+
+        }
+    </style>
+    <title>Openingstijden</title>
+</head>
+
+<body>
+    <div class="parent">
+        <header>
+            <img src="assets/logo.png" alt="logo" />
+            <h1>De Fluitende Fietser</h1>
+            <div class="search">
+                <ul style="list-style-type: none;">
+                    <li class="cart"
+                        style="list-style-type: none; display: inline-block; background: none; border: none; text-decoration: none; ">
+                        <a style="text-decoration: none;" class="idk2 idk" href="Winkel.html" target="_self">
+                            <ion-icon name="basket"></ion-icon><span>0</span>
+                        </a>
+                    </li>
+                </ul>
+                <input type="text" placeholder="Search...." style="display: none;" id="zoeken">
+                <!-- <a href="Cart.html"> <img src="assets/imgs/winkelwagen.png" alt="wagen" style="height: 50px;">(<span class="total-count"></span>) </a> -->
+                <img src="assets/zoek.png" alt="zoek" style="height: 70px; align-self: center;" onclick="myFunct()" />
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="Fietsen.html" target="_self">Fietsen</a></li>
+                <li><a href="Contact.html" target="_self">Contact</a></li>
+                <li><a href="Openingstijden.html" target="_self">Openingstijden</a></li>
+                <li><a href="Overons.html" target="_self">Over ons</a></li>
+            </ul>
+        </nav>
+        <h1 class="header">Openingstijden!!!!</h1>
+        <section class="open" id="time">
+            <table>
+                <tr>
+                    <th>Openingsdagen</th>
+                    <th>Openingstijden</th>
+                </tr>
+                <tr>
+                    <td>Maandag</td>
+                    <td>12:30 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Dinsdag</td>
+                    <td>08:30 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Woensdag</td>
+                    <td>08:30 -18:00</td>
+                </tr>
+                <tr>
+                    <td>Donderdag</td>
+                    <td>08:30 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Vrijdag</td>
+                    <td>08:30 -19:30</td>
+                </tr>
+                <tr>
+                    <td>Zaterdag</td>
+                    <td>09:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Zondag</td>
+                    <td style="color: red;">Gesloten</td>
+                </tr>
+            </table>
+        </section>
+        <div class="gegevens">
+            <table style="width: 100%;">
+                <tr>
+                    <th>Adresgegevens</th>
+                    <th class="box"></th>
+                </tr>
+                <tr>
+                    <td>Telefoonnummer:</td>
+                    <td>06 7762 &#8209; 9938 88</td>
+                </tr>
+                <tr>
+                    <td>E&#8209;mail</td>
+                    <td> info&#64;defluitendefietser.nl</td>
+                </tr>
+                <tr>
+                    <td>Adres:</td>
+                    <td>Ruwe Putten 30</td>
+                </tr>
+                <tr>
+                    <td>Postcode</td>
+                    <td>5674 SL Nuenen</td>
+                </tr>
+                <tr>
+                    <td>Locatie</td>
+                    <td>
+                        <div class="mapouter" style="width: 100%; height: 100%;">
+                            <div class="gmap_canvas" style="width: 100%; height: 100%;"><iframe width="100%"
+                                    height="100%" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=ruwe%20putten%205674%20SL%20Nuenen&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                    href="https://embedgooglemap.net/maps/65"></a><br>
+                                <a href="https://www.embedgooglemap.net">put google maps on your website</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <a href="https://www.facebook.com/fietsmagazine" class="fa fa-facebook" target="blank"></a>
+            <a href="https://twitter.com/fietsmagazine" class="fa fa-twitter" target="blank"></a>
+            <a href="Contact.html" target="_self" class="foot Fcontact">Contact</a>
+            <a href="Overons.html" target="_self" class="foot over">Over ons</a>
+            <a href="assets/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="blank"
+                class="foot voorwaarden">
+                Algemene voorwaarden</a>
+            <p class="footP">KVK: 88599665 | BTW NL999888492Z09</p>
+            <p class="footp names">&#169; 2021 Fluitende Fietser </p>
+            <a class="footerEmail" href="#" target="_self">info&#64;defluitendefietser.nl </a>
+        </footer>
+    </div>
+    <script src="Javascript/shoppingCart.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="Javascript/js.js"> </script>
+</body>
+
+</html>

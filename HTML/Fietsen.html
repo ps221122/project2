@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logo20x20.png" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/2nd.css" rel="stylesheet">
+    <link href="css/3rd.css" rel="stylesheet">
+    <style>
+        .parent {
+            grid-template-rows: 6% 3% 5% 30% 1fr 25% 10% 6%;
+        }
+
+        footer {
+            grid-row: 8/9;
+        }
+
+        @media only screen and (max-width: 790px) and (orientation:portrait) {
+            .parent {
+                grid-template-rows: 7% 5% 4% 1fr 1fr 2fr;
+            }
+
+            nav {
+                font-size: 22px;
+                height: 100%;
+                width: 100%;
+            }
+
+            #article {
+                grid-row: 4/7;
+                grid-column: 1/5;
+                grid-template-columns: 50% 50%;
+            }
+
+        }
+
+        @media only screen and (max-width: 800px) and (orientation:landscape) {
+
+            .parent {
+                grid-template-rows: 12% 22vw 10vw auto auto auto auto auto auto auto auto;
+                grid-template-columns: 100%;
+                grid-gap: 5px;
+            }
+
+
+            header {
+                width: 100vw;
+            }
+
+
+        }
+    </style>
+    <title>Fietsen</title>
+</head>
+
+<body>
+    <div class="parent" id="parent">
+        <header>
+            <img class="logo" src="assets/logo.png" alt="logo" />
+            <h1>De Fluitende Fietser</h1>
+            <div class="search">
+                <ul style="list-style-type: none;">
+                    <li class="cart"
+                        style="list-style-type: none; display: inline-block; background: none; border: none; text-decoration: none; ">
+                        <a style="text-decoration: none;" class="idk2 idk" href="Winkel.html" target="_self">
+                            <ion-icon name="basket"></ion-icon><span>0</span>
+                        </a>
+                    </li>
+                </ul>
+                <input type="text" placeholder="Search...." style="display: none;" id="zoeken">
+                <!-- <a href="Cart.html"> <img src="assets/imgs/winkelwagen.png" alt="wagen" style="height: 50px;">(<span class="total-count"></span>) </a> -->
+                <img class="search-logo" src="assets/zoek.png" alt="zoek" style="height: 70px; align-self: center;"
+                    onclick="myFunct()" />
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="Fietsen.html" target="_self">Fietsen</a></li>
+                <li><a href="Fietsverhuur.html" target="_self">FietsVerhuur</a></li>
+                <li><a href="Contact.html" target="_self">Contact</a></li>
+                <li><a href="Openingstijden.html" target="_self">Openingstijden</a></li>
+                <li><a href="Overons.html" target="_self">Over ons</a></li>
+            </ul>
+        </nav>
+        <h1 class="header">Fietsen!!!</h1>
+        <div id="article">
+            <div class="itemA">
+                <a href="info.html#container4" target="_self"><img class="bikes" src="assets/imgs/fiets/fiets1.jpg"
+                        alt="fiets1"></a>
+            </div>
+            <div class="info1">
+                <h2>Gae CityGo C7</h2>
+                <h2>&#8364; 679,00</h2>
+            </div>
+            <div class="cart1">
+                <a class="add"><img class="wagen" src="assets/imgs/winkelwagen.png" alt="wagen">&#43;</a>
+            </div>
+            <div class="itemB">
+                <a href="info1.html#container1" target="_self"><img class="bikes" src="assets/imgs/fiets/fiets2.jpg"
+                        alt="fiets2"></a>
+            </div>
+            <div class="info2">
+                <h2>Pelikaan Carry On Lady</h2>
+                <h2>&#8364; 769,00</h2>
+            </div>
+            <div class="cart2">
+                <a class="add"><img class="wagen" src="assets/imgs/winkelwagen.png" alt="wagen">&#43;</a>
+            </div>
+
+            <div class="itemC">
+                <a href="info2.html#container2" target="_self"><img class="bikes" src="assets/imgs/fiets/fiets3.jpg"
+                        alt="fiets3"></a>
+            </div>
+            <div class="info3">
+                <h2>Allegra Voorwielmotor</h2>
+                <h2>&#8364; 999,00</h2>
+            </div>
+            <div class="cart3">
+                <a class="add"><img class="wagen" src="assets/imgs/winkelwagen.png" alt="wagen">&#43;</a>
+            </div>
+
+            <div class="itemD">
+                <a href="info3.html#container3" target="_self"><img class="bikes" src="assets/imgs/fiets/fiets4.jpg"
+                        alt="fiets4"></a>
+            </div>
+            <div class="info4">
+                <h2>Gazelle Orange C7+ HMB 2020</h2>
+                <h2>&#8364; 2199,00</h2>
+            </div>
+            <div class="cart4">
+                <a class="add"><img class="wagen" src="assets/imgs/winkelwagen.png" alt="wagen">&#43;</a>
+            </div>
+            <div class="itemE">
+                <a href="info4.html" target="_self"><img class="bikes" src="assets/imgs/fiets/fiets5.jpg"
+                        alt="fiets5"></a>
+            </div>
+            <div class="info5">
+                <h2>Stromer ST3 2021 Sport</h2>
+                <h2>&#8364; 7090,00</h2>
+            </div>
+            <div class="cart5">
+                <a class="add"><img class="wagen" src="assets/imgs/winkelwagen.png" alt="wagen">&#43;</a>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.facebook.com/fietsmagazine" class="fa fa-facebook" target="blank"></a>
+            <a href="https://twitter.com/fietsmagazine" class="fa fa-twitter" target="blank"></a>
+            <a href="Contact.html" target="_self" class="foot Fcontact">Contact</a>
+            <a href="Overons.html" target="_self" class="foot over">Over ons</a>
+            <a href="assets/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="blank"
+                class="foot voorwaarden">
+                Algemene voorwaarden</a>
+            <p class="footP">KVK: 88599665 | BTW NL999888492Z09</p>
+            <p class="footp names">&#169; 2021 Fluitende Fietser </p>
+            <a class="footerEmail" href="#" target="_self">info&#64;defluitendefietser.nl </a>
+        </footer>
+    </div>
+    <script src="Javascript/shoppingCart.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="Javascript/js.js"> </script>
+</body>
+
+</html>

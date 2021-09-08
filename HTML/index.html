@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logo20x20.png" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/2nd.css" rel="stylesheet">
+    <link href="css/3rd.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="parent" id="parent">
+        <header>
+            <img class="logo" src="assets/logo.png" alt="logo" />
+            <h1>De Fluitende Fietser</h1>
+            <div class="search">
+                <ul style="list-style-type: none;">
+                    <li class="cart"
+                        style="list-style-type: none; display: inline-block; background: none; border: none; text-decoration: none; ">
+                        <a style="text-decoration: none;" class="idk2 idk" href="Winkel.html" target="_self">
+                            <ion-icon name="basket"></ion-icon><span>0</span>
+                        </a>
+                    </li>
+                </ul>
+                <input type="text" placeholder="Search...." style="display: none;" id="zoeken">
+                <!-- <a href="Cart.html"> <img src="assets/imgs/winkelwagen.png" alt="wagen" style="height: 50px;">(<span class="total-count"></span>) </a> -->
+                <img class="search-logo" src="assets/zoek.png" alt="zoek" style="height: 70px; align-self: center;"
+                    onclick="myFunct()" />
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="Fietsen.html" target="_self">Fietsen</a></li>
+                <li><a href="Contact.html" target="_self">Contact</a></li>
+                <li><a href="Openingstijden.html" target="_self">Openingstijden</a></li>
+                <li><a href="Overons.html" target="_self">Over ons</a></li>
+            </ul>
+        </nav>
+        <div class="photo-section">
+            <div class="w3-content w3-section">
+                <img class="img mySlides w3-animate-top" src="assets/imgs/sfeer1.jpg" alt="sfeer1">
+                <img class="img mySlides w3-animate-left" src="assets/imgs/sfeer2.jpg" alt="sfeer2">
+                <img class="img mySlides w3-animate-bottom" src="assets/imgs/sfeer3.jpg" alt="sfeer3">
+                <img class="img mySlides w3-animate-right" src="assets/imgs/sfeer4.jpg" alt="sfeer4">
+                <img class="img mySlides w3-animate-top" src="assets/imgs/winkel1.jpg" alt="winkel1">
+                <img class="img mySlides w3-animate-right" src="assets/imgs/ebike.png" alt="ebike">
+                <img class="img mySlides w3-animate-bottom" src="assets/imgs/winkel3.jpg" alt="winkel3">
+                <img class="img mySlides w3-animate-left" src="assets/imgs/winkel2.jpg" alt="winkel2">
+                <img class="img mySlides w3-animate-top" src="assets/team.jfif" alt="teamfoto">
+            </div>
+        </div>
+        <h1 id="display" class="A sign"></h1>
+        <img src="assets/imgs/fiets/gif.gif" id="imgB" alt="gif" />
+        <footer>
+            <a href="https://www.facebook.com/fietsmagazine" class="fa fa-facebook" target="blank"></a>
+            <a href="https://twitter.com/fietsmagazine" class="fa fa-twitter" target="blank"></a>
+            <a href="Contact.html" target="_self" class="foot Fcontact">Contact</a>
+            <a href="Overons.html" target="_self" class="foot over">Over ons</a>
+            <a href="assets/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="blank"
+                class="foot voorwaarden">
+                Algemene voorwaarden</a>
+            <p class="footP">KVK: 88599665 | BTW NL999888492Z09</p>
+            <p class="footp names">&#169; 2021 Fluitende Fietser </p>
+            <a class="footerEmail" href="#" target="_self">info&#64;defluitendefietser.nl </a>
+        </footer>
+    </div>
+    <script src="Javascript/js.js"> </script>
+    <script src="Javascript/shoppingCart.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+
+</html>

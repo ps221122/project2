@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logo20x20.png" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/2nd.css" rel="stylesheet">
+    <link href="css/3rd.css" rel="stylesheet">
+    <style>
+        table {
+            border-radius: 50px;
+        }
+
+        td {
+            border: black dotted 2px;
+            padding: 10px 5px;
+
+        }
+
+        .container {
+            position: relative;
+            grid-row: 3/6;
+            grid-column: 2/5;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            color: black;
+            font-size: 50px;
+            padding: 16px 32px;
+        }
+
+        #container1 {
+            display: none;
+        }
+
+        #container2 {
+            display: none;
+        }
+
+        #container3 {
+            display: none;
+        }
+
+        #container4 {
+            display: none;
+        }
+
+        #container5 {
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 790px) and (orientation:portrait) {
+            .container {
+                grid-column: 1/5;
+            }
+
+            .text {
+                font-size: 19px;
+            }
+        }
+    </style>
+    <title>info</title>
+</head>
+
+<body>
+    <div class="parent">
+        <header>
+            <img src="assets/logo.png" alt="logo" />
+            <h1>De Fluitende Fietser</h1>
+            <div class="search">
+                <input type="text" placeholder="Search...." style="display: none;" id="zoeken">
+                <!-- <a href="Cart.html"> <img src="assets/imgs/winkelwagen.png" alt="wagen" style="height: 50px;">(<span class="total-count"></span>) </a> -->
+                <img src="assets/zoek.png" alt="zoek" style="height: 70px;" onclick="myFunct()" />
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="Fietsen.html" target="_self">Fietsen</a></li>
+                <li><a href="Contact.html" target="_self">Contact</a></li>
+                <li><a href="Openingstijden.html" target="_self">Openingstijden</a></li>
+                <li><a href="Overons.html" target="_self">Over ons</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="container4">
+            <img src="assets/imgs/fiets/fiets1.jpg" alt="Fietsen" id="fiets4" class="image" style="width:100%">
+            <div class="middle" id="middle">
+                <div class="text" id="text">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Naam:</td>
+                            <td>Gazelle CityGo C7</td>
+                        </tr>
+                        <tr>
+                            <td>Type:</td>
+                            <td>Niet elektrisch</td>
+                        </tr>
+                        <tr>
+                            <td>prive zakelijk beide:</td>
+                            <td>Geschikt voor zakelijk en prive</td>
+                        </tr>
+                        <tr>
+                            <td>Geslacht:</td>
+                            <td>Heren</td>
+                        </tr>
+                        <tr>
+                            <td>Stads/ Transport/ Oma vouw hybride:</td>
+                            <td>Stads</td>
+                        </tr>
+                        <tr>
+                            <td>merk:</td>
+                            <td>Gazelle</td>
+                        </tr>
+                        <tr>
+                            <td>Gebruikt:</td>
+                            <td>*Nieuw</td>
+                        </tr>
+                        <tr>
+                            <td>Kleur:</td>
+                            <td>Zwart</td>
+                        </tr>
+                        <tr>
+                            <td>Prijs:</td>
+                            <td>&#8364; 679,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opmerking:</td>
+                            <td> Wielmaat: 28 Inch</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="container1">
+            <img src="assets/imgs/fiets/fiets2.jpg" alt="Fietsen" id="fiets1" class="image" style="width:100%">
+            <div class="middle" id="middle">
+                <div class="text" id="text">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Naam:</td>
+                            <td>Pelikaan Carry On Lady</td>
+                        </tr>
+                        <tr>
+                            <td>Type:</td>
+                            <td>Elektrisch</td>
+                        </tr>
+                        <tr>
+                            <td>prive zakelijk beide:</td>
+                            <td>Geschikt voor zakelijk en prive</td>
+                        </tr>
+                        <tr>
+                            <td>Geslacht:</td>
+                            <td>Dames</td>
+                        </tr>
+                        <tr>
+                            <td>Stads/ Transport/ Oma vouw hybride:</td>
+                            <td>Transport</td>
+                        </tr>
+                        <tr>
+                            <td>merk:</td>
+                            <td>Pelikaan</td>
+                        </tr>
+                        <tr>
+                            <td>Gebruikt:</td>
+                            <td>*Nieuw</td>
+                        </tr>
+                        <tr>
+                            <td>Kleur:</td>
+                            <td>Zwart</td>
+                        </tr>
+                        <tr>
+                            <td>Prijs:</td>
+                            <td>&#8364; 769,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opmerking:</td>
+                            <td>28 Inch 53 cm 3V V-Brakes</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container2">
+            <img src="assets/imgs/fiets/fiets3.jpg" alt="Fietsen" id="fiets2" class="image" style="width:100%">
+            <div class="middle" id="middle">
+                <div class="text" id="text">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Naam:</td>
+                            <td>Allegra voorwielmotor</td>
+                        </tr>
+                        <tr>
+                            <td>Type:</td>
+                            <td>Elektrisch</td>
+                        </tr>
+                        <tr>
+                            <td>prive zakelijk beide:</td>
+                            <td>Geschikt voor zakelijk en prive</td>
+                        </tr>
+                        <tr>
+                            <td>Geslacht:</td>
+                            <td>Dames</td>
+                        </tr>
+                        <tr>
+                            <td>Stads/ Transport/ Oma vouw hybride:</td>
+                            <td>Stads</td>
+                        </tr>
+                        <tr>
+                            <td>merk:</td>
+                            <td>Stella</td>
+                        </tr>
+                        <tr>
+                            <td>Gebruikt:</td>
+                            <td>*Nieuw</td>
+                        </tr>
+                        <tr>
+                            <td>Kleur:</td>
+                            <td>Zwart</td>
+                        </tr>
+                        <tr>
+                            <td>Prijs:</td>
+                            <td>&#8364; 999,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opmerking:</td>
+                            <td>Frameraat S (Lichaamslengte 1,62m - 1,73m)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container3">
+            <img src="assets/imgs/fiets/fiets4.jpg" alt="Fietsen" id="fiets3" class="image" style="width:100%">
+            <div class="middle" id="middle">
+                <div class="text" id="text">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Naam:</td>
+                            <td>Gazelle Orange C7+ HMB 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Type:</td>
+                            <td>Elektrisch</td>
+                        </tr>
+                        <tr>
+                            <td>prive zakelijk beide:</td>
+                            <td>Geschikt voor zakelijk en prive</td>
+                        </tr>
+                        <tr>
+                            <td>Geslacht:</td>
+                            <td>Heren</td>
+                        </tr>
+                        <tr>
+                            <td>Stads/ Transport/ Oma vouw hybride:</td>
+                            <td>Stads</td>
+                        </tr>
+                        <tr>
+                            <td>merk:</td>
+                            <td>Gazelle</td>
+                        </tr>
+                        <tr>
+                            <td>Gebruikt:</td>
+                            <td>*Nieuw</td>
+                        </tr>
+                        <tr>
+                            <td>Kleur:</td>
+                            <td>Blauw</td>
+                        </tr>
+                        <tr>
+                            <td>Prijs:</td>
+                            <td>&#8364; 2199,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opmerking:</td>
+                            <td>frameraat 53cm(1.66cm-1.77cm)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="container5">
+            <img src="assets/imgs/fiets/fiets5.jpg" alt="Fietsen" id="fiets5" class="image" style="width:100%">
+            <div class="middle" id="middle">
+                <div class="text" id="text">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Naam:</td>
+                            <td>Stromer ST3 2021 Sport</td>
+                        </tr>
+                        <tr>
+                            <td>Type:</td>
+                            <td>Elektrisch</td>
+                        </tr>
+                        <tr>
+                            <td>prive zakelijk beide:</td>
+                            <td>Geschikt voor zakelijk en prive</td>
+                        </tr>
+                        <tr>
+                            <td>Geslacht:</td>
+                            <td>Heren</td>
+                        </tr>
+                        <tr>
+                            <td>Stads/ Transport/ Oma vouw hybride:</td>
+                            <td>Stads</td>
+                        </tr>
+                        <tr>
+                            <td>Merk:</td>
+                            <td>Stromer</td>
+                        </tr>
+                        <tr>
+                            <td>Gebruikt:</td>
+                            <td>*Nieuw</td>
+                        </tr>
+                        <tr>
+                            <td>Kleur:</td>
+                            <td>Zwart</td>
+                        </tr>
+                        <tr>
+                            <td>Prijs:</td>
+                            <td>&#8364; 7090,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opmerking:</td>
+                            <td>Shimano XT/SLX Microshift 11 Speed 11-42</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.facebook.com/fietsmagazine" class="fa fa-facebook" target="blank"></a>
+            <a href="https://twitter.com/fietsmagazine" class="fa fa-twitter" target="blank"></a>
+            <a href="Contact.html" target="_self" class="foot Fcontact">Contact</a>
+            <a href="Overons.html" target="_self" class="foot over">Over ons</a>
+            <a href="assets/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="blank"
+                class="foot voorwaarden">
+                Algemene voorwaarden</a>
+            <p class="footP">KVK: 88599665 | BTW NL999888492Z09</p>
+            <p class="footp names">&#169; 2021 Fluitende Fietser </p>
+            <a class="footerEmail" href="#" target="_self">info&#64;defluitendefietser.nl </a>
+        </footer>
+    </div>
+    <script src="Javascript/shoppingCart.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="Javascript/js.js"> </script>
+</body>
+
+</html>
