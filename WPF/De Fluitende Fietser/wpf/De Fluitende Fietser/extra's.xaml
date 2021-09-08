@@ -1,0 +1,174 @@
+﻿<Window x:Class="De_Fluitende_Fietser.extra_s"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De_Fluitende_Fietser"
+        mc:Ignorable="d"
+        Title="extra_s" Height="450" Width="800"  FontSize="18" Foreground="White" FontFamily="Times new roman">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/assets/note1.jpg"  Stretch="UniformToFill" Opacity="0.65"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0"  Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="" Grid.Column="1" Grid.Row="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/5cent.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+            <Button Content="" Grid.Column="1" Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/10eurocent.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+            <Button Content="" Grid.Column="1" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/20eurocent.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+
+            <Button Content="" Grid.Column="1" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/50eurocent.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+            <Button Content=""  Grid.Column="1" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/1euro.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+            <Button Content="" Grid.Column="1" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/2euro.jpeg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+            <Button Content="" Grid.Column="1" Grid.Row="6">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/5 euro.png" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+
+            <Button Content="" Grid.Column="1" Grid.Row="7">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/10 euro.png" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+            <Button Content="" Grid.Column="1" Grid.Row="8">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/20 euro.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+            <Button Content="" Grid.Column="1" Grid.Row="9">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/50 euro.png" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+            <Button Content="" Grid.Column="1" Grid.Row="10">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/100 euro.jpg" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+            <Button Content="" Grid.Column="1" Grid.Row="11">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/200 euro.jpg" Stretch="Uniform"  />
+                </Button.Background>
+            </Button>
+            <Label Grid.Row="0" Grid.Column="0" Content="5 Cent" Foreground="White"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="10 Cent" Foreground="White"/>
+            <Label Grid.Row="2" Grid.Column="0"  Content="20 Cent" Foreground="White"/>
+            <Label Grid.Row="3" Grid.Column="0"  Content="50 Cent" Foreground="White"/>
+            <Label Grid.Row="4" Grid.Column="0"  Content="1 Euro" Foreground="White"/>
+            <Label Grid.Row="5" Grid.Column="0"  Content="2 Euro" Foreground="White"/>
+            <Label Grid.Row="6" Grid.Column="0"  Content="5 Euro" Foreground="White"/>
+            <Label Grid.Row="7" Grid.Column="0"  Content="10 Euro" Foreground="White"/>
+            <Label Grid.Row="8" Grid.Column="0"  Content="20 Euro" Foreground="White"/>
+            <Label Grid.Row="9" Grid.Column="0"  Content="50 Euro" Foreground="White"/>
+            <Label Grid.Row="10" Grid.Column="0"  Content="100 euro" Foreground="White"/>
+            <Label Grid.Row="11" Grid.Column="0"  Content="200 Euro" Foreground="White"/>
+            <StackPanel Grid.Row="0" Grid.Column="2"  Grid.RowSpan="12">
+                <ListBox Height="420" Width="90" Opacity="0.25" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1"  Grid.RowSpan="2" Background="Chocolate">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Fietsen" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+            <Label Content="Verzekering" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+            <Label Content="Service" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="16" Foreground="White"/>
+            <DockPanel HorizontalAlignment="Left" Height="95"  Margin="91,0,-0.2,0" VerticalAlignment="Top" Width="174">
+                <StackPanel Orientation="Vertical" DockPanel.Dock="Left">
+                    <ComboBox Height="32" />
+                    <ComboBox  Height="32"/>
+                    <ComboBox Height="32" />
+                </StackPanel>
+            </DockPanel>
+            <Label Content="Dagen" HorizontalAlignment="Center" Margin="130,95,78.8,0" Width="56" VerticalAlignment="Top" Foreground="White"/>
+            <Button Content="Bestel artikel" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="118" Height="33" Background="DarkBlue" Foreground="White"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="191,99,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="64" Foreground="White"/>
+
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+        <Grid Grid.Column="3"  Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="40px"/>
+            </Grid.RowDefinitions>
+            <StatusBar HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Width="266" Height="40" />
+
+        </Grid>
+
+    </Grid>
+</Window>

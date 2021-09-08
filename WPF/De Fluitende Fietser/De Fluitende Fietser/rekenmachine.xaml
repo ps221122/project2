@@ -1,0 +1,75 @@
+﻿<Window x:Class="De_Fluitende_Fietser.rekenmachine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De_Fluitende_Fietser"
+        mc:Ignorable="d"
+        Title="rekenmachine" Height="450" Width="800" FontFamily="times new roman" FontSize="18" Foreground="Black">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/assets/numbers.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="tbTime" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="00" VerticalAlignment="Center"  FontSize="30" Opacity="0.50" Margin="110,0,0,0"/>
+        <Label Content=":" Grid.Row="1" Grid.Column="0" FontSize="30" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="53,0,0,0"/>
+        <TextBox x:Name="tbTimely" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="00" VerticalAlignment="Center"  FontSize="30" Opacity="0.50"/>
+        <Label Content=":" Grid.Row="1" Grid.Column="0" FontSize="30" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,53,0"/>
+        <TextBox x:Name="tbTimey" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="00" VerticalAlignment="Center"  FontSize="30" Opacity="0.50" Margin="0,0,110,0" />
+        <Button  x:Name="btnReset" Content="(Re)set tijd " Grid.Column="0" Grid.Row="1" Width="120" Height="60" VerticalAlignment="Bottom" Background="DarkBlue" Foreground="White" Click="btnReset_Click"/>
+
+        <!--2de grid voor rekenmachine-->
+        <Grid Grid.Column="1"  Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45px"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="4" Height="50" FontSize="22" Background="Black" VerticalAlignment="Top"  Foreground="White" Text="Rekenmachine" TextDecorations="Underline" FontWeight="Bold" TextWrapping="Wrap" />
+            <TextBox  x:Name="txtDisplay"  IsReadOnly="True" TextAlignment="Left" VerticalContentAlignment="Bottom" Text="" Grid.Column="0" Grid.Row="1" FontSize="45" Background="DarkGray" Grid.ColumnSpan="4"/>
+            <TextBox  x:Name="txtdisplay"  IsReadOnly="True" TextAlignment="Left" VerticalContentAlignment="Bottom" Text="" Grid.Column="3" Grid.Row="1" FontSize="20" Background="DarkGray" Margin="0.4,45.2,9.8,51.6"/>
+            <!--btn numbers-->
+            <Button x:Name="btn0"  Grid.Column="1" Grid.Row="5" Content="0" Click="btn0_Click"/>
+            <Button x:Name="btn1" Grid.Column="0" Grid.Row="4" Content="1" Click="btn1_Click"/>
+            <Button x:Name="btn2"  Grid.Column="1" Grid.Row="4" Content="2" Click="btn2_Click"/>
+            <Button x:Name="btn3" Grid.Column="2" Grid.Row="4" Content="3" Click="btn3_Click"/>
+            <Button x:Name="btn4" Grid.Column="0" Grid.Row="3" Content="4" Click="btn4_Click"/>
+            <Button  x:Name="btn5" Grid.Column="1" Grid.Row="3" Content="5" Click="btn5_Click"/>
+            <Button x:Name="btn6"  Grid.Column="2" Grid.Row="3" Content="6" Click="btn6_Click"/>
+            <Button x:Name="btn7" Grid.Column="0" Grid.Row="2" Content="7" Click="btn7_Click"/>
+            <Button x:Name="btn8" Grid.Column="1" Grid.Row="2" Content="8" Click="btn8_Click"/>
+            <Button x:Name="btn9"  Grid.Column="2" Grid.Row="2" Content="9" Click="btn9_Click"/>
+
+            <!--math buttons-->
+            <Button x:Name="btnr"  Grid.Column="0" Grid.Row="5" Content="+/-" Click="btnr_Click"/>
+            <Button  x:Name="btnK" Grid.Column="2" Grid.Row="5" Content=","/>
+            <Button x:Name="btnPi" Grid.Column="2" Grid.Row="6" Content="π" Click="btnPi_Click"/>
+            <Button  x:Name="btnkeer" Grid.Column="3" Grid.Row="2" Content="*" Click="btnkeer_Click"/>
+            <Button x:Name="btnmin"  Grid.Column="3" Grid.Row="3" Content="-" Click="btnmin_Click"/>
+            <Button x:Name="btndeel" Grid.Column="3" Grid.Row="4" Content="/" Click="btndeel_Click"/>
+            <Button x:Name="btnplus" Grid.Column="3" Grid.Row="5" Content="+" Click="btnplus_Click"/>
+            <Button x:Name="btnenter" Grid.Column="3" Grid.Row="6" Content="=" Click="btnenter_Click"/>
+
+            <!--clear buttons-->
+            <Button x:Name="btnc" Grid.Column="0" Grid.Row="6" Content="C" Click="btnc_Click"/>
+            <Button  x:Name="btnC" Grid.Column="1" Grid.Row="6" Content="&lt; &lt;" Click="btnBackspace_Click"/>
+        </Grid>
+    </Grid>
+</Window>
